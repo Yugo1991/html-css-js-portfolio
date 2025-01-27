@@ -6,7 +6,7 @@
     .about-containers {
         flex-wrap: wrap;
     }
-}
+} /*For Desktops*/
 
 @media screen and (max-width: 1200px) {
     #desktop-nav {
@@ -38,7 +38,7 @@
     .about-containers {
         margin-top: 0;
     }
-}
+} /*For Tablets*/
 
 @media screen and (max-width: 600px){
     #contact, footer{
@@ -89,5 +89,5 @@
     .text-container {
         text-align: justify;
     }
-}
+} /*For Phones*/
 
