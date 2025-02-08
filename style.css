@@ -130,7 +130,7 @@ a:hover{
 }
 
 section{
-    padding-top: 4vh;
+    padding-top: 5rem;
     height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
@@ -188,6 +188,14 @@ section{
 .icon {
     cursor: pointer;
     height: 2rem;
+}
+
+i {
+    cursor: pointer;
+}
+
+.fa-facebook, .fa-brands{
+    font-size: 2rem;
 }
 
 .btn-container{

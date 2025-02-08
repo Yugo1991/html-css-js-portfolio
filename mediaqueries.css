@@ -20,6 +20,7 @@
     }
     #profile, .section-container{
         display: block;
+        padding-top: 10rem;
     }
     .arrow {
         display: none;
@@ -47,6 +48,7 @@
     #profile{
         height: 83vh;
         margin-bottom: 0;
+        padding-top: 10rem;
     }
     article {
         font-size: 1rem;
