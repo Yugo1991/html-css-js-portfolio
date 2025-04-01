@@ -183,6 +183,7 @@ section{
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
+    align-items: center;
 }
 
 .icon {
@@ -392,8 +393,12 @@ article .icon{
 }
 
 .email-icon, .contact-icon{
-    height: 2.4rem;
+    height: 2.5rem;
     cursor: pointer;
+}
+
+.email-icon, img{
+    position: relative;
 }
 
 footer {
