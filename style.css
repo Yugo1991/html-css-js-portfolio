@@ -380,6 +380,19 @@ article .icon{
     border-color: rgb(163, 163, 163);
 }
 
+#gitbtn{
+    color: darkseagreen;
+    background-color: white;
+    font-size: 15px;
+    margin: auto;
+    margin-top: auto;
+}
+
+#gitbtn {
+    margin-top: 10px;
+}
+
+
 #contact{
     display: flex;
     justify-content: center;
