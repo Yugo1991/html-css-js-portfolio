@@ -247,23 +247,30 @@
       </div>
 
       <div class="form-group">
-        <label for="service">Project Type</label>
+        <label for="service" required>Project Type</label>
         <select id="service" name="service">
-          <option value="website">Website</option>
-          <option value="ecommerce">E-Commerce</option>
           <option value="landing">Landing Page</option>
+          <option value="ecommerce">E-Commerce</option>
+          <option value="business">Business</option>
+          <option value="blog">Blog</option>
+          <option value="portfolio">Portfolio</option>
+          <option value="personal">Personal</option>
+          <option value="news">News</option>
+          <option value="nonprofit">Non Profit</option>
+          <option value="educational">Educational</option>
+          <option value="forum">Forum</option>
           <option value="other">Other</option>
         </select>
       </div>
 
       <div class="form-group">
-        <label for="datetime">Preferred Date & Time</label>
-        <input type="datetime-local" id="datetime" name="datetime">
+        <label for="datetime">Preferred Date & Time you would like to book your appointment to discuss about your website</label>
+        <input type="datetime-local" id="datetime" name="datetime" required>
       </div>
 
       <div class="form-group">
-        <label for="message">Tell me about your project</label>
-        <textarea id="message" name="message" rows="4" placeholder="What do you need help with?"></textarea>
+        <label for="message">Please describe your business and what your website is for</label>
+        <textarea id="message" name="message" rows="4" placeholder="What do you need help with?" required></textarea>
       </div>
 
       <button type="submit">Request Free Consultation</button>
