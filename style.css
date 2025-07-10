@@ -212,6 +212,10 @@ section{
     height: 2rem;
 }
 
+img[alt="fiverr"] {
+  height: 2.7rem;
+}
+
 i {
     cursor: pointer;
 }
