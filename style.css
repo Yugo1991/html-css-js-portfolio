@@ -463,6 +463,17 @@ article .icon{
       margin-bottom: 1rem;
     }
 
+.radio-group {
+    display: flex;
+    gap: 1.5rem; /* space between Yes/No */
+    margin-top: 0.5rem;
+  }
+  .radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem; /* space between button and label text */
+  }
+
 label {
       display: block;
       margin-bottom: 0.3rem;
