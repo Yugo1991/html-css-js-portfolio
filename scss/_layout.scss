@@ -1,85 +1,23 @@
-nav,
-.nav-links {
-  @include flex-center;
+nav, .nav-links {
+  @include flex-center(row, space-around, center);
 }
 
-nav {
-  justify-content: space-around;
-  align-items: center;
-  height: 17vh;
-
-  .logo {
-    font-size: 2rem;
-
-    &:hover {
-      cursor: default;
-    }
-  }
-
-  .nav-links {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
-
-    a {
-      color: $color-dark;
-      text-decoration: none;
-
-      &:hover {
-        color: $color-light;
-        text-decoration: underline;
-        text-underline-offset: 1rem;
-        text-decoration-color: $color-light;
-      }
-    }
-  }
+.nav-links {
+  gap: $gap-default;
+  list-style: none;
+  font-size: 1.5rem;
 }
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+  padding-top: 5rem;
+  height: 100vh;
   margin: 0 10rem;
-  box-sizing: border-box;
   min-height: fit-content;
-
-  &.section-container {
-    display: flex;
-  }
 }
 
-#profile {
+.section-container {
   @include flex-center;
-  justify-content: center;
-  gap: 5rem;
-  height: 80vh;
-
-  .section-pic-container {
-    display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-  }
-
-  .section-text {
-    align-self: center;
-    text-align: center;
-
-    p {
-      font-weight: 600;
-
-      &.section-text-p1 {
-        text-align: center;
-      }
-
-      &.section-text-p2 {
-        font-size: 1.75rem;
-        margin-bottom: 1rem;
-      }
-    }
-
-    .title {
-      font-size: 3rem;
-      text-align: center;
-    }
-  }
+  gap: 4rem;
+  height: 80%;
 }
+

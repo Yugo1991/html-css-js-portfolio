@@ -1,135 +1,42 @@
-#about {
-  position: relative;
-
-  .about-container {
-    gap: 4rem;
-    margin: 2rem 0;
-    @include flex-between;
-  }
-
-  .about-pic {
-    border-radius: 2rem;
-  }
-
-  .details-container {
-    padding: 1.5rem;
-    flex: 1;
-    background: $color-light;
-    border-radius: 2rem;
-    border: 0.1rem solid $color-gray;
-    text-align: center;
-  }
-
-  .section-container {
-    gap: 4rem;
-    height: 80%;
-  }
-}
-
-#projects {
-  position: relative;
-
-  .color-container {
-    border-color: $color-light;
-    background: $color-muted;
-  }
-
-  .project-img {
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
-  }
-
-  .project-title {
-    margin: 1rem;
-    color: $color-light;
-  }
-
-  .project-btn {
-    color: $color-light;
-    border-color: $color-light;
-  }
-}
-
-#contact {
+#profile, #about, #experience, #projects, #contact {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  height: 70vh;
-
-  .contact-info-upper-container {
-    @include flex-center;
-    border-radius: 2rem;
-    border: 0.1rem solid $color-gray;
-    background: $color-light;
-    margin: 2rem auto;
-    padding: 0.5rem;
-  }
-
-  .contact-info-container {
-    @include flex-center;
-    gap: 0.5rem;
-    margin: 1rem;
-  }
-
-  .contact-info-container p {
-    font-size: larger;
-  }
 }
 
-footer {
-  height: 26vh;
-  margin: 0 1rem;
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
 
   p {
-    text-align: center;
+    font-weight: 600;
   }
 }
 
-.newsletter-signup {
-  background-color: $color-primary;
+.newsletter-signup, .newsletter-container {
+  background-color: $primary-color;
   padding: 20px;
-  border-radius: $radius-md;
-  @include flex-center;
-  flex-direction: column;
-  min-height: 80vh;
-
-  h2 {
-    color: $color-dark;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  p {
-    color: $color-muted;
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-
-  .newsletter-form {
-    @include flex-center;
-    flex-wrap: wrap;
-    gap: 10px;
-
-    input[type="email"] {
-      flex: 1;
-      min-width: 250px;
-      padding: 12px 15px;
-      border: 1px solid $color-gray;
-      border-radius: $radius-sm;
-    }
-
-    button {
-      background-color: $color-dark;
-      color: $color-light;
-      padding: 12px 20px;
-      border-radius: $radius-sm;
-      cursor: pointer;
-      @include transition(background);
-
-      &:hover {
-        background-color: darken($color-primary, 20%);
-      }
-    }
-  }
+  border-radius: $border-radius;
 }
+
+.project-img {
+  border-radius: $border-radius;
+  width: 90%;
+  height: 90%;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: $border-radius;
+  border: 0.1rem solid $border-color;
+  text-align: center;
+}
+
