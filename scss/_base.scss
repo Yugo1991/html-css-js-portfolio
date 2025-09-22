@@ -1,0 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: $color-muted;
+}
+
+a,
+.btn {
+  @include transition;
+}

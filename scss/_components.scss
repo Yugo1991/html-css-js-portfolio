@@ -1,0 +1,41 @@
+.btn {
+  font-weight: 600;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: $radius-lg;
+  @include transition;
+
+  &-color-1 {
+    background: $color-dark;
+    color: $color-light;
+
+    &:hover {
+      background: lighten($color-dark, 10%);
+      border: 0.1rem solid $color-dark;
+      cursor: pointer;
+    }
+  }
+
+  &-color-2 {
+    background: $color-dark;
+    color: $color-light;
+
+    &:hover {
+      background: $color-light;
+      color: $color-dark;
+      border: 0.1rem solid $color-light;
+    }
+  }
+}
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}

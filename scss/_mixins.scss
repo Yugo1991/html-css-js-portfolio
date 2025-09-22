@@ -1,0 +1,28 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin transition($props: all, $time: 300ms, $ease: ease) {
+  transition: $props $time $ease;
+}
+
+@mixin shadow($blur: 15px, $color: rgba(0,0,0,0.1)) {
+  box-shadow: 0 0 $blur $color;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 600px) { @content; }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: 900px) { @content; }
+  }
+}
